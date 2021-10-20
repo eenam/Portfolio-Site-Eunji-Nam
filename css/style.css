@@ -9,10 +9,14 @@ img {
 }
 
 header {
-  background-color: #ff44c4;
+  background-color: #ffffff;
   padding: 10px;
   margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
+  border-bottom: 3px solid #ffffff;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
 }
 
 .button {
@@ -66,4 +70,62 @@ header {
 /* Layout styling */
 .container {
   padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ffffff;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
