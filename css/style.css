@@ -87,6 +87,18 @@ header {
   /* Centers text */
 }
 
+#work h1 {
+  text-align: center;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+#about h3 {
+  margin-top: 0;
+}
+
 .logo {
   max-width: 250px;
 }
@@ -151,7 +163,10 @@ footer {
 }
 
 .profile_image {
-  width: 500px;
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* ==============================
