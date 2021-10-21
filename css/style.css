@@ -1,7 +1,7 @@
 body {
-  background-color: lightgrey;
+  background-color: white;
   font-family: 'Chivo', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 img {
@@ -91,12 +91,6 @@ header {
   max-width: 250px;
 }
 
-header {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
-}
-
 nav {
   display: inline-block;
   width: 100%;
@@ -124,6 +118,11 @@ nav>ul>li>a:visited {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
 }
 
 main {
@@ -154,3 +153,45 @@ footer {
 .profile_image {
   width: 500px;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    background-color: #ffffff;
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
