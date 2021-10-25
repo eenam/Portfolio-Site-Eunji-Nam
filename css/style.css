@@ -30,7 +30,10 @@ header {
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s opacity;
+  transition-property: opacity;
+  /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+  */
 }
 
 .button:hover {
@@ -148,8 +151,18 @@ main {
 
 .social_ul {
   list-style-type: none;
+  justify-content: center;
   padding: 0;
-  display: inline-block;
+  display: flex;
+}
+
+.social_ul li {
+  margin-right: 10px;
+}
+
+.social_ul svg {
+  width: 24px !important;
+  height: 24px;
 }
 
 footer {
@@ -204,9 +217,62 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+  .clouds {
+    animation: 30s cloud-move infinite alternate linear;
+  }
