@@ -43,6 +43,10 @@ nav>ul>li>a:visited {
   padding-right: 0;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
