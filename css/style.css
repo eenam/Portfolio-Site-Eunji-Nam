@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  color: black;
   font-family: 'Chivo', sans-serif;
   font-size: 18px;
 }
@@ -13,8 +14,6 @@ header {
   padding: 10px 0 4px;
   margin: 10px;
   border-bottom: 3px solid #ffffff;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   position: relative;
 }
@@ -33,6 +32,7 @@ nav>ul>li>a:visited {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+  background-color: #ffffff;
 }
 
 .navtoggle li .icon {
@@ -75,8 +75,7 @@ nav>ul>li>a:visited {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
-  transition-duration: 0.2s opacity;
+  transition-duration: 0.2s;
   transition-property: opacity;
   /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
   */
@@ -158,6 +157,7 @@ nav>ul>li>a:visited {
 } */
 #hero {
   background-color: #ffffff;
+  color: black;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -198,10 +198,9 @@ main {
 
 footer {
   border-bottom: 3px solid #ffffff;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   background-color: #ffffff;
+  color: black;
   text-align: center;
   padding: 10px 0;
 }
@@ -219,8 +218,9 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 641px) {
   header {
     background-color: #ffffff;
+    color: black;
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 0px 13px;
   }
 
   nav {
@@ -288,15 +288,18 @@ X-large devices (1440px or larger)
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    color: #edc655;
+    background-color: white;
   }
 
   50% {
-    fill: #fcffad;
+    color: #fcffad;
+    background-color: white;
   }
 
   100% {
-    fill: #f76414;
+    color: #f76414;
+    background-color: white;
   }
 }
 
@@ -312,15 +315,16 @@ X-large devices (1440px or larger)
   to {
     transform: translate(200px, 50px);
   }
+}
 
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
 
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
-  .clouds {
-    animation: 30s cloud-move infinite alternate linear;
-  }
+.clouds {
+  animation: 30s cloud-move infinite alternate linear;
+}
